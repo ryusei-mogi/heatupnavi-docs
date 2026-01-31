@@ -11,9 +11,6 @@ const config: Config = {
 
   future: {
     v4: true,
-
-    // Keep hash routing: works on GitHub Pages and also keeps parity with the in-app manual.
-    experimental_router: 'hash',
   },
 
   url: isGitHubPages ? 'https://ryusei-mogi.github.io' : 'http://localhost:3000',
