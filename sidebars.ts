@@ -10,6 +10,7 @@ const sidebars: SidebarsConfig = {
     'features',
     'faq',
     'privacy',
+    'terms',
     'support',
   ],
 };
