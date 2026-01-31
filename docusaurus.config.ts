@@ -37,8 +37,8 @@ const config: Config = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
-          // Serve docs at site root for App Store URLs like /#privacy etc.
-          routeBasePath: '/',
+          // Keep docs under /docs so the LP homepage remains available at /.
+          routeBasePath: '/docs',
         },
         blog: false,
         theme: {
@@ -81,20 +81,20 @@ const config: Config = {
         {
           title: 'マニュアル',
           items: [
-            {label: 'はじめに', to: '/intro'},
-            {label: '初回セットアップ', to: '/setup'},
-            {label: '画面の見方', to: '/screens'},
-            {label: '使い方（毎日の流れ）', to: '/usage'},
-            {label: '設定の詳細', to: '/settings'},
-            {label: '機能ガイド', to: '/features'},
+            {label: 'はじめに', to: '/docs/intro'},
+            {label: '初回セットアップ', to: '/docs/setup'},
+            {label: '画面の見方', to: '/docs/screens'},
+            {label: '使い方（毎日の流れ）', to: '/docs/usage'},
+            {label: '設定の詳細', to: '/docs/settings'},
+            {label: '機能ガイド', to: '/docs/features'},
           ],
         },
         {
           title: 'サポート',
           items: [
-            {label: 'FAQ', to: '/faq'},
-            {label: '権限とデータの扱い', to: '/privacy'},
-            {label: 'お問い合わせ', to: '/support'},
+            {label: 'FAQ', to: '/docs/faq'},
+            {label: '権限とデータの扱い', to: '/docs/privacy'},
+            {label: 'お問い合わせ', to: '/docs/support'},
           ],
         },
       ],
